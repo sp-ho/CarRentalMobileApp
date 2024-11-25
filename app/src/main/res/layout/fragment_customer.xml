@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/reserveTitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reserveTitle_textView"
+        android:layout_marginTop="80dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/address_auto_complete"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:hint="@string/address_auto_complete"
+        android:layout_below="@id/reserveTitle_textView"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:padding="8dp" />
+
+    <!-- Icon for Address Suggestions -->
+    <ImageView
+        android:id="@+id/ic_address_suggestions"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/address_auto_complete"
+        android:layout_alignBottom="@id/address_auto_complete"
+        android:layout_toEndOf="@id/address_auto_complete"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_address_suggestions" />
+
+    <Button
+        android:id="@+id/roadTrips_button"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/address_auto_complete"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/roadTrips_button" />
+
+    <Button
+        android:id="@+id/startCountry_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/roadTrips_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/startCountry_button" />
+
+    <Button
+        android:id="@+id/stopCountry_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/startCountry_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/stopCountry_button" />
+
+    <Button
+        android:id="@+id/webService_button"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/stopCountry_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/webService_button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="272dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="270dp"
+        android:layout_toEndOf="@+id/startCountry_button"
+        app:srcCompat="@drawable/ic_trips" />
+</RelativeLayout>

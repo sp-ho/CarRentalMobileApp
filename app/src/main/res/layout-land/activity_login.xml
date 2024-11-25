@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Adjust the positioning of elements for landscape orientation -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_user_profile"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewLogo"
+
+        android:hint="@string/username_editText"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/username_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="@string/password_editText"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_button" />
+
+</RelativeLayout>

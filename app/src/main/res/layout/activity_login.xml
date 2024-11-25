@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_user_profile"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_marginTop="16dp"
+        android:hint="@string/username_editText"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/username_editText"
+        android:layout_marginTop="8dp"
+        android:hint="@string/password_editText"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_editText"
+        android:layout_marginTop="24dp"
+        android:text="@string/login_button" />
+
+
+    <TextView
+        android:id="@+id/notMember_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/notMember_textView"
+        android:textSize="16sp" />
+
+<!--    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notMember_textView"
+        android:layout_marginTop="8dp"
+        android:text="@string/signup_button"
+        android:textSize="18sp" />-->
+
+    <TextView
+        android:id="@+id/signup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notMember_textView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textColor="#0077cc"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/black"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleReservation_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="@string/titleReservation_textView"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/customerId_autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/customerId_autoCompleteTextView"
+        android:layout_below="@id/titleReservation_textView"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/reservationId_autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reservationId_autoCompleteTextView"
+        android:padding="16dp"
+        android:layout_below="@id/customerId_autoCompleteTextView"
+        android:layout_marginTop="16dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/carId_autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/carId_autoCompleteTextView"
+        android:padding="16dp"
+        android:layout_below="@id/reservationId_autoCompleteTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/searchReservation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchReservation_button"
+        android:layout_below="@id/carId_autoCompleteTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchReservation_button"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/scrollViewLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/reservationList_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:text="@string/reservationList_textView" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

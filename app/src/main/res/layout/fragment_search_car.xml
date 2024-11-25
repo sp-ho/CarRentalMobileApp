@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="SearchCarFragment">
+
+    <!-- Content for the main part of the screen -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_horizontal_car"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblSearchCarId_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/lblSearchCarId_textView"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lblSearchCarMake_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/lblSearchCarMake_textView"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lblSearchCarModel_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/lblSearchCarModel_textView"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/searchCarId_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/searchCarId_editText" />
+
+                <EditText
+                    android:id="@+id/searchCarMake_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/searchCarMake_editText" />
+
+                <EditText
+                    android:id="@+id/searchCarModel_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/searchCarModel_editText" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchCarById_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/searchCarById_button"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout_horizontal_car"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout_horizontal_car"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_horizontal_car" />
+
+        <Button
+            android:id="@+id/searchCarByMake_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/searchCarByMake_button"
+            app:layout_constraintEnd_toEndOf="@+id/searchCarById_button"
+            app:layout_constraintStart_toStartOf="@+id/searchCarById_button"
+            app:layout_constraintTop_toBottomOf="@+id/searchCarById_button" />
+
+        <Button
+            android:id="@+id/searchCarByModel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/searchCarByModel_button"
+            app:layout_constraintEnd_toEndOf="@+id/searchCarByMake_button"
+            app:layout_constraintStart_toStartOf="@+id/searchCarByMake_button"
+            app:layout_constraintTop_toBottomOf="@+id/searchCarByMake_button" />
+
+        <ScrollView
+            android:id="@+id/searchList_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/searchCarByModel_button"
+            app:layout_constraintStart_toStartOf="@+id/searchCarByModel_button"
+            app:layout_constraintTop_toBottomOf="@+id/searchCarByModel_button">
+
+            <TextView
+                android:id="@+id/searchData_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/carData_textView" />
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<resources>
+    <!-- icons on MainActivity toolbar -->
+    <string name="app_name">CarRentalProject</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_contact">Phone</string>
+    <string name="action_email">Email</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_allCars">Car List</string>
+    <string name="action_reservation">Reservation List</string>
+
+    <!-- TextViews and buttons in MainFragment -->
+    <string name="carID_textView" />
+    <string name="carModel_textView" />
+    <string name="carMake_textView" />
+    <string name="carFeePerDay_textView" />
+    <string name="carAddress_textView" />
+    <string name="carAvailable_textView" />
+    <string name="prevCar_button">Prev Car</string>
+    <string name="nextCar_button">Next Car</string>
+    <string name="carDetails_button">Car Details</string>
+    <string name="allCars_button">All Cars</string>
+    <string name="searchCar_button">Search Car</string>
+
+    <!-- TextViews, EditTexts and buttons in CarFragment -->
+    <string name="lblCarId_textView">Car ID</string>
+    <string name="lblCarModel_textView">Car Model</string>
+    <string name="lblCarMake_textView">Car Make</string>
+    <string name="lblCarFeePerDay_textView">Car Fee/Day (C$)</string>
+    <string name="lblCarAddress_textView">Car Address</string>
+    <string name="lblCarAvailable_textView">Car Availability</string>
+    <string name="carId_editText">-</string>
+    <string name="carModel_editText">-</string>
+    <string name="carMake_editText">-</string>
+    <string name="carFeePerDay_editText">-</string>
+    <string name="carAddress_spinner" />
+    <string name="carAvailable_spinner" />
+    <string name="updateCar_button">Update Car Information</string>
+    <string name="deleteCar_button">Delete Car</string>
+    <string name="addCar_button">Add Car</string>
+    <string name="carData_textView"/>
+
+    <!-- RecyclerView in AllCarsActivity -->
+    <string name="CarRecyclerView" />
+
+    <!-- TextViews, EditTexts and buttons in SearchCarFragment -->
+    <string name="lblSearchCarId_textView">Car ID</string>
+    <string name="lblSearchCarModel_textView">Car Model</string>
+    <string name="lblSearchCarMake_textView">Car Make</string>
+    <string name="searchCarId_editText">-</string>
+    <string name="searchCarModel_editText">-</string>
+    <string name="searchCarMake_editText">-</string>
+    <string name="searchCarById_button">Search Car By ID</string>
+    <string name="searchCarByMake_button">Search Car By Make</string>
+    <string name="searchCarByModel_button">Search Car By Model</string>
+    <string name="searchData_textView"/>
+    <string name="title_activity_car_maps">CarMapsActivity</string>
+
+    <!-- ManageReserveActivity -->
+    <string name="titleReservation_textView">RESERVATION LIST</string>
+    <string name="customerId_autoCompleteTextView">Customer ID</string>
+    <string name="reservationId_autoCompleteTextView">Reservation ID</string>
+    <string name="carId_autoCompleteTextView">Car ID</string>
+    <string name="reservationList_textView"/>
+    <string name="searchReservation_button">Search</string>
+
+    <!-- EditTexts and button in LoginActivity -->
+    <string name="username_editText">Username</string>
+    <string name="password_editText">Password</string>
+    <string name="login_button">Login</string>
+    <string name="notMember_textView">Not a member yet?</string>
+    <string name="signup_button">Sign Up</string>
+
+    <!-- EditTexts and button in RegisterActivity -->
+    <string name="register_username_editText">Username</string>
+    <string name="register_password_editText">Password</string>
+    <string name="register_confirm_button">Sign Up</string>
+
+    <!-- icons on CustomerActivity toolbar -->
+    <string name="action_map">Map</string>
+    <string name="action_search">Search</string>
+    <string name="action_more">More</string>
+    <string name="action_customer_profile">Profile</string>
+    <string name="action_profile">My Profile</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- CustomerFragment -->
+    <string name="reserveTitle_textView">START A RESERVATION</string>
+    <string name="address_editText">Enter a pick-up location</string>
+    <string name="address_auto_complete">Enter pick up address</string>
+    <string name="roadTrips_button">25 Best Road Trips from Montreal</string>
+    <string name="startCountry_button">Play Song</string>
+    <string name="stopCountry_button">Stop Song</string>
+    <string name="webService_button">Car Manufacturers Web Service</string>
+
+    <!-- ReserveActivity -->
+    <string name="lblSelectedAddress_textView">Selected Location:</string>
+    <string name="selectedAddress_textView" />
+    <string name="lblPickup_textView">PICK-UP</string>
+    <string name="lblReturn_textView">RETURN</string>
+    <string name="startDate_datePicker" />
+    <string name="endDate_datePicker" />
+    <string name="reserveSearch_button">Search</string>
+
+    <!-- CarContentActivity -->
+    <string name="carContent_textView" />
+    <string name="carContent_button">Call Web Service</string>
+
+    <!-- ConfirmationActivity -->
+    <string name="reserveCarDetails_textView" />
+    <string name="reservationId_textView" />
+    <string name="dateRange_textView" />
+    <string name="pickupLocation_textView" />
+    <string name="totalFee_textView" />
+    <string name="reserveSuccess_textView">Reservation Successful!</string>
+
+    <!-- ProfileActivity -->
+    <string name="greetCustomer_textView" />
+    <string name="email_textView" />
+    <string name="reservationHistory_textView" />
+
+</resources>

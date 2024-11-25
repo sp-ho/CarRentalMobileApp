@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CustomerActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/action_map"
+        app:showAsAction="ifRoom" />
+
+<!--    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/action_more"
+        app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/action_profile"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/action_logout"
+        app:showAsAction="ifRoom" />
+</menu>

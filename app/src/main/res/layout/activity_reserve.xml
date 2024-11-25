@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/black"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSelectedAddress_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="566dp"
+        android:text="@string/lblSelectedAddress_textView"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/selectedAddress_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/selectedAddress_textView"
+        app:layout_constraintEnd_toEndOf="@+id/lblSelectedAddress_textView"
+        app:layout_constraintStart_toStartOf="@+id/lblSelectedAddress_textView"
+        app:layout_constraintTop_toBottomOf="@+id/lblSelectedAddress_textView" />
+
+    <LinearLayout
+        android:id="@+id/lblDateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedAddress_textView">
+
+        <TextView
+            android:id="@+id/lblPickup_textView"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/lblPickup_textView"/>
+        <TextView
+            android:id="@+id/lblReturn_textView"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/lblReturn_textView"/>
+    </LinearLayout>
+
+    <!-- Horizontal LinearLayout for Date Pickers -->
+    <LinearLayout
+        android:id="@+id/datePickersLayout"
+        android:layout_width="0dp"
+        android:layout_height="430dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDateLayout">
+
+        <!-- Date picker for start date -->
+        <DatePicker
+            android:id="@+id/startDate_datePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <!-- Date picker for end date -->
+        <DatePicker
+            android:id="@+id/endDate_datePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <!-- Search button -->
+    <Button
+        android:id="@+id/reserveSearch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reserveSearch_button"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePickersLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
